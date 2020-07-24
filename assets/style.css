@@ -1,0 +1,28 @@
+.header {
+    font-family: monospace;
+    font-size: 28px;
+    font-weight: bolder;
+    background-color: forestgreen;
+    color: yellow;
+    text-align: center;
+    border: solid blue;
+    padding: 20px;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.pinetree1 {
+    max-height: 120px;
+    background-color: forestgreen;
+    float: inline-start;
+    padding-right: 175px;
+}
+
+.pinetree2 {
+    max-height: 120px;
+    background-color: forestgreen;
+    float: inline-end;
+    padding-left: 175px;
+}
