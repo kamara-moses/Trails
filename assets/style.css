@@ -5,10 +5,12 @@
 }
 
 body {
-    background-image: url('rainforest.jpg');
+    background-image: url('hike.jpg');
     background-repeat: no-repeat;
-    background-position: top;
+    background-position:top;
     background-size: cover;
+    
+
 }
 
 
@@ -73,4 +75,16 @@ body {
     content: '';
     clear: both;
     display: table;
+}
+.title {
+    text-align: center;
+    margin-top: 250px;
+    font-size: 36px;
+    color: #F1F1F1;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}   
+
+.search {
+    margin-left: 550px;
+    width: 100%;
 }

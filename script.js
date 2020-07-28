@@ -1,4 +1,4 @@
-$.ajax(search:data,)
+// $.ajax(search:data,)
 // THIS IS THE HIKING PROJECT.....
 // var city = "Seattle, Washington";
 // var lat = "";
@@ -11,6 +11,8 @@ $.ajax(search:data,)
 // });
 
 // THIS IS NPS.GOV\.....
+
+
 
 // var liExist = false;
 
@@ -63,3 +65,23 @@ $.ajax(search:data,)
 // }
 
 // $(watchForm())
+
+var state = $('.search-field').val();
+var cities = [''];
+var APIKey = 'ar4J5Kk8F1fWQGXW0ZyAkQkzTbxOStQJ94fQfKFx'
+$('.searchBtn').on('click', function () {
+    state = $('.search-field').val();
+    $('.search-field').val('');
+
+    var queryUrl = `https://developer.nps.gov/api/v1/parks?stateCode=' + state + '&limit=&api_key=ar4J5Kk8F1fWQGXW0ZyAkQkzTbxOStQJ94fQfKFx`;
+$.ajax({
+    url: queryUrl, 
+    method: 'GET'
+})
+.then(function (response){
+    console.log(response);
+    })
+}) 
+
+   
+  
