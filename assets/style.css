@@ -1,3 +1,5 @@
+
+
 .header {
     font-family: monospace;
     font-size: 28px;
@@ -25,4 +27,40 @@
     background-color: forestgreen;
     float: inline-end;
     padding-left: 175px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.search input {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 30%;
+    background: #F1F1F1;
+}
+  /* Style the submit button */
+.search button {
+    float: left;
+    width: 5%;
+    padding: 10px;
+    background: rgb(173, 216, 230);
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+.search button:hover {
+    background: #0B7DDA;
+}
+  /* Clear floats */
+.search::after {
+    content: '';
+    clear: both;
+    display: table;
 }
