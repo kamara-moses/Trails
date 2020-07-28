@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html {
-    height: auto;
-    width: auto;
-}
 body {
     background-image: url('rainforest.jpg');
     background-repeat: no-repeat;
