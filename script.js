@@ -68,13 +68,13 @@
 
 var states = $('.search-field').val();
 var parks = [''];
-var APIKey = 'ar4J5Kk8F1fWQGXW0ZyAkQkzTbxOStQJ94fQfKFx'
+var APIKey = '902b8f90e56be9c604839ab2c7f3b692'
 // var location = 'states'
 $('.searchBtn').on('click', function () {
     states = $('.search-field').val();
     $('.search-field').val('');
 
-    var queryUrl = `https://www.hikingproject.com/data/get-trails?lat=47.606&lon=-122.332&key=200855102-ce3f0b2f2ef3cefcfa802afcc897d712`;
+    var queryUrl = 'http://api.positionstack.com/v1/forward?query=' + states + '&access_key=902b8f90e56be9c604839ab2c7f3b692';
 $.ajax({
     url: queryUrl, 
     method: 'GET'
@@ -86,3 +86,9 @@ $.ajax({
 
 //    Hiking Project api that is lo and location.
 // https://www.hikingproject.com/data/get-trails?lat=40.0274&lon=-105.2519&maxDistance=10&key=200855102-ce3f0b2f2ef3cefcfa802afcc897d712  
+
+//positionstack geocoding API key
+//902b8f90e56be9c604839ab2c7f3b692
+
+//positionstack API
+//http://api.positionstack.com/v1/forward?access_key=902b8f90e56be9c604839ab2c7f3b692&query=Seattle
