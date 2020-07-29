@@ -21,7 +21,7 @@ body {
     background-image: url('Ort.gif');
     color: yellow;
     text-align: center;
-    border: solid blue;
+    border-bottom: 10px solid blue;
     padding: 20px;
     display: inline-flex;
     width: 100%;
@@ -52,13 +52,13 @@ body {
     font-size: 17px;
     border: 1px solid grey;
     float: left;
-    width: 30%;
+    width: 92%;
     background: #F1F1F1;
 }
   /* Style the submit button */
 .search button {
     float: left;
-    width: 5%;
+    width: 8%;
     padding: 10px;
     background: rgb(173, 216, 230);
     color: white;
@@ -78,13 +78,13 @@ body {
 }
 .title {
     text-align: center;
-    margin-top: 250px;
-    font-size: 36px;
-    color: #F1F1F1;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    margin-top: 175px;
+    font-size: xx-large;
+    color: white;
 }   
 
 .search {
-    margin-left: 550px;
-    width: 100%;
+    margin-left: 375px;
+    width: 50%;
+    border: 5px solid blue;
 }
