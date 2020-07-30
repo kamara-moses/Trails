@@ -79,11 +79,44 @@ $.ajax({
     url: queryUrl, 
     method: 'GET'
 })
-.then(function (response){
-    console.log(response);
+.then(function(response){
+    var latitude = response.data[0].latitude;
+    var longitude = response.data[0].longitude;
+    $.ajax({
+        url:`https://www.hikingproject.com/data/get-trails?lat=${latitude}&lon=${longitude}&maxDistance=10&key=200855102-ce3f0b2f2ef3cefcfa802afcc897d712`
+        , method: 'GET'
     })
-}) 
+    .then(function(response){
+        console.log(response)
+    })
+})
+// function states(){
+//     let lat = position.coords.latitude;
+//     let long = position.coords.longitude;
+// }
+// then(function (response){
+//     console.log(response);
+    // var name = data[0].name;
+    // console.log(name); 
+    // })
+     
 
+// $.getJSON('http://api.positionstack.com/v1/forward?query=' + states + '&access_key=902b8f90e56be9c604839ab2c7f3b692', 
+// function(data){
+   
+// var latitude = [0].latitude;
+// var longitude = [0].longitude;
+// var name = data.data[0].name;
+// event.preventDefault();
+
+// $('.latitude').append(latitude);
+// $('.longitude').append(longitude);
+// $('.name').append(name);
+// console.log(data);
+// console.log(name);
+
+// });
+}) 
 //    Hiking Project api that is lo and location.
 // https://www.hikingproject.com/data/get-trails?lat=40.0274&lon=-105.2519&maxDistance=10&key=200855102-ce3f0b2f2ef3cefcfa802afcc897d712  
 
