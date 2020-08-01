@@ -98,21 +98,25 @@ $('.searchBtn').on('click', function ()
             var stars1 = response.trails[1].stars;
             var location1 = response.trails[1].location;
             var summary1 = response.trails[1].summary;
+            var link1 = response.trails[1].url;
 
             var name2 = response.trails[2].name;
             var stars2 = response.trails[2].stars;
             var location2 = response.trails[2].location;
             var summary2 = response.trails[2].summary;
+            var link2 = response.trails[2].url;
 
             var name3 = response.trails[3].name;
             var stars3 = response.trails[3].stars;
             var location3 = response.trails[3].location;
             var summary3 = response.trails[3].summary;
+            var link3 = response.trails[3].url;
 
             var name4 = response.trails[4].name;
             var stars4 = response.trails[4].stars;
             var location4 = response.trails[4].location;
             var summary4 = response.trails[4].summary;
+            var link4 = response.trails[4].url;
 
             // event.preventDefault();
             
@@ -123,28 +127,32 @@ $('.searchBtn').on('click', function ()
             $('.stars').append(stars + ' stars');
             $('.location').append(location);
             $('.summary').append('Summary: ' + summary);
-            $('.link').append(link);
+            $('.link').attr('href', link).text(link);
 
 
             $('.name1').append(name1);
             $('.stars1').append(stars1 + ' stars');
             $('.location1').append(location1);
             $('.summary1').append('Summary: ' + summary1);
+            $('.link1').attr('href', link1).text(link1);
 
             $('.name2').append(name2);
             $('.stars2').append(stars2 + ' stars');
             $('.location2').append(location2);
             $('.summary2').append('Summary: ' + summary2);
+            $('.link2').attr('href', link2).text(link2);
 
             $('.name3').append(name3);
             $('.stars3').append(stars3 + ' stars');
             $('.location3').append(location3);
             $('.summary3').append('Summary: ' + summary3);
+            $('.link3').attr('href', link3).text(link3);
 
             $('.name4').append(name4);
             $('.stars4').append(stars4 + ' stars4');
             $('.location4').append(location4);
             $('.summary4').append('Summary: ' + summary4);
+            $('.link4').attr('href', link4).text(link4);
 
 
 
