@@ -123,7 +123,7 @@ $('.searchBtn').on('click', function ()
             $('.stars').append(stars + ' stars');
             $('.location').append(location);
             $('.summary').append('Summary: ' + summary);
-            $('.link').append(link);
+            $('.link').attr('href', link).text(link);
 
 
             $('.name1').append(name1);

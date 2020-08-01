@@ -32,13 +32,13 @@ body {
 .pinetree1 {
     max-height: 120px;
     float: inline-start;
-    padding-right: 175px;
+    padding-right: 90px;
 }
 
 .pinetree2 {
     max-height: 120px;
     float: inline-end;
-    padding-left: 175px;
+    padding-left: 90px;
 }
 
 .row:after {
@@ -84,8 +84,8 @@ body {
 }   
 
 .search {
-    margin-left: 375px;
-    width: 50%;
+    margin-left: 80px;
+    margin-right: 80px;
     border: 5px solid blue;
 }
 .card {
