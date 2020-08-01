@@ -1,9 +1,9 @@
 // $.ajax(search:data,)
 // THIS IS THE HIKING PROJECT.....
-// var city = "Seattle, Washington";
-// var lat = "";
-// var lon = "";
-// $.getJSON("https://www.hikingproject.com/data/get-trails?lat=47.60357&lon=-122.32945&maxDistance=10&key=200850912-4921b8432a4db16d916f8038166bb140",
+// var city = 'Seattle, Washington';
+// var lat = '';
+// var lon = '';
+// $.getJSON('https://www.hikingproject.com/data/get-trails?lat=47.60357&lon=-122.32945&maxDistance=10&key=200850912-4921b8432a4db16d916f8038166bb140',
 // function(data){
 // console.log(data);
 
@@ -58,7 +58,7 @@
 // console.log(responseJson)
 // console.log(responseJson.data.length)
 // for(let i = 0; i < responseJson.data.length; i++){
-// $('ol').append(`<li><b>Name:</b> ${responseJson.data[i].name}<br><b>Description:</b> ${responseJson.data[i].description}<br><b>URL:</b> <a href="${responseJson.data[i].url}">${responseJson.data[i].url}</a></li>`);
+// $('ol').append(`<li><b>Name:</b> ${responseJson.data[i].name}<br><b>Description:</b> ${responseJson.data[i].description}<br><b>URL:</b> <a href='${responseJson.data[i].url}'>${responseJson.data[i].url}</a></li>`);
 // }
 // liExist = true;
 // }
@@ -91,54 +91,78 @@ $('.searchBtn').on('click', function ()
             var stars = response.trails[0].stars;
             var location = response.trails[0].location;
             var summary = response.trails[0].summary;
+            var link = response.trails[0].url;
+           
+
+            var name1 = response.trails[1].name;
+            var stars1 = response.trails[1].stars;
+            var location1 = response.trails[1].location;
+            var summary1 = response.trails[1].summary;
+
+            var name2 = response.trails[2].name;
+            var stars2 = response.trails[2].stars;
+            var location2 = response.trails[2].location;
+            var summary2 = response.trails[2].summary;
+
+            var name3 = response.trails[3].name;
+            var stars3 = response.trails[3].stars;
+            var location3 = response.trails[3].location;
+            var summary3 = response.trails[3].summary;
+
+            var name4 = response.trails[4].name;
+            var stars4 = response.trails[4].stars;
+            var location4 = response.trails[4].location;
+            var summary4 = response.trails[4].summary;
+
             // event.preventDefault();
-
-
+            
+  
+            
+           
             $('.name').append(name);
             $('.stars').append(stars + ' stars');
             $('.location').append(location);
-            $('.summary').append(summary);
+            $('.summary').append('Summary: ' + summary);
+            $('.link').append(link);
 
+
+            $('.name1').append(name1);
+            $('.stars1').append(stars1 + ' stars');
+            $('.location1').append(location1);
+            $('.summary1').append('Summary: ' + summary1);
+
+            $('.name2').append(name2);
+            $('.stars2').append(stars2 + ' stars');
+            $('.location2').append(location2);
+            $('.summary2').append('Summary: ' + summary2);
+
+            $('.name3').append(name3);
+            $('.stars3').append(stars3 + ' stars');
+            $('.location3').append(location3);
+            $('.summary3').append('Summary: ' + summary3);
+
+            $('.name4').append(name4);
+            $('.stars4').append(stars4 + ' stars4');
+            $('.location4').append(location4);
+            $('.summary4').append('Summary: ' + summary4);
+
+
+
+            
             console.log(response);
             console.log(name);
             console.log(stars);
             console.log(location);
             console.log(summary);
+
+            
+           
         });
 
-// function states(){
-//     let lat = position.coords.latitude;
-//     let long = position.coords.longitude;
-// }
-// then(function (response){
-//     console.log(response);
-// var name = data[0].name;
-// console.log(name);
-// })
 
 
-        // $.getJSON(`https://www.hikingproject.com/data/get-trails?lat=${latitude}&lon=${longitude}&maxDistance=10&key=200855102-ce3f0b2f2ef3cefcfa802afcc897d712`, function (data)
-        // {
 
-        //     var name = data.data[0].name;
-        //     var stars = data.data[0].stars;
-        //     var location = data.data[0].location;
-        //     var summary = data.data[0].summary;
-        //     event.preventDefault();
-
-
-        //     $('.name').append(name);
-        //     $('.stars').append(stars);
-        //     $('.location').append(location);
-        //     $('.summary').append(summary);
-
-        //     console.log(data);
-        //     console.log(name);
-        //     console.log(stars);
-        //     console.log(location);
-        //     console.log(summary);
-
-        // });
+      
     });
 });
 //    Hiking Project api that is lo and location.

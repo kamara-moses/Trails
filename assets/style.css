@@ -42,7 +42,7 @@ body {
 }
 
 .row:after {
-    content: "";
+    content: '';
     display: table;
     clear: both;
 }
@@ -87,4 +87,11 @@ body {
     margin-left: 375px;
     width: 50%;
     border: 5px solid blue;
+}
+.card {
+    opacity: 50%;
+    font-weight: bolder;
+    color: black;
+    border: groove blue 5px;
+    margin-bottom: 2px;
 }
