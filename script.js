@@ -154,7 +154,24 @@ $('.searchBtn').on('click', function ()
             $('.summary4').append('Summary: ' + summary4);
             $('.link4').attr('href', link4).text(link4);
 
+           
+           
+            function clearTheCard(card) {
+                document.getElementById(searchBtn).on('click')
+                document.getElementById(card);
+                var defaultValue = card.defaultValue;
+                var currentValue = card.value;
+                if(currentValue == "") {
+                    card.value == defaultValue;
+                    return;
+                }
 
+                if(currentValue == defaultValue) {
+                    card.value === '';
+                    return false;
+                    
+                }
+            }
 
             
             console.log(response);
