@@ -120,8 +120,6 @@ $('.searchBtn').on('click', function ()
 
             // event.preventDefault();
             
-  
-            
            
             $('.name').append(name);
             $('.stars').append(stars + ' stars');
