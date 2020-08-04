@@ -5,4 +5,4 @@ We used a geolocation api http://api.positionstack.com to pass the location of t
 
 We took the the geolocation and passed it into our hiking api https://www.hikingproject.com/data and that allowed us to call up the hikes near that city based on its latitude and longitude.
 
-<img src=assets/Trails.png width= 700px 500px>
+<img src='assets/Trails.png' width= 700px 500px>
