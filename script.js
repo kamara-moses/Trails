@@ -6,7 +6,7 @@ var APIKey = '902b8f90e56be9c604839ab2c7f3b692';
         { states = $('.search-field').val();
           $('.search-field').val('');
 
-          var queryUrl = 'http://api.positionstack.com/v1/forward?query=' + states + '&access_key=902b8f90e56be9c604839ab2c7f3b692';
+          var queryUrl = 'https://api.positionstack.com/v1/forward?query=' + states + '&access_key=902b8f90e56be9c604839ab2c7f3b692';
                 $.ajax(
                     {url: queryUrl, method: 'GET'}
                 ).then(function (response)
