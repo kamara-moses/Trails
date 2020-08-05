@@ -1,18 +1,18 @@
 var states = $('.search-field').val();
 var parks = [''];
-var APIKey = '902b8f90e56be9c604839ab2c7f3b692';
+var APIKey = '7522115a30c44451a2e6f533abbbb3bd';
             
     $('.searchBtn').on('click', function ()
         { states = $('.search-field').val();
           $('.search-field').val('');
 
-          var queryUrl = 'https://api.positionstack.com/v1/forward?query=' + states + '&access_key=902b8f90e56be9c604839ab2c7f3b692';
-                $.ajax(
-                    {url: queryUrl, method: 'GET'}
-                ).then(function (response)
-                {
-                    var latitude = response.data[0].latitude;
-                    var longitude = response.data[0].longitude;
+          var queryUrl = 'https://api.opencagedata.com/geocode/v1/json?q=' + states + '&key=7522115a30c44451a2e6f533abbbb3bd';
+                  $.ajax(
+                      {url: queryUrl, method: 'GET'}
+                  ).then(function (response)
+                  {
+                      var latitude = response.results[0].geometry.lat;
+                      var longitude = response.results[0].geometry.lng;
                     $.ajax(
                         {url: `https://www.hikingproject.com/data/get-trails?lat=${latitude}&lon=${longitude}&maxDistance=10&key=200855102-ce3f0b2f2ef3cefcfa802afcc897d712`, method: 'GET'}
                     ).then(function (response)
