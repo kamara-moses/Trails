@@ -9,6 +9,8 @@ We took the the geolocation and passed it into our hiking api https://www.hiking
 
 ![Trails Demo](assets/trails.gif)
 
+<p><a href='https://kamara-moses.github.io/Trails/'>Trails</a></p>
+
 <h2>Techonologies Used</h2>
 
     - HTML5
